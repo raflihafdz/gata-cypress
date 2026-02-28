@@ -1,0 +1,21 @@
+{
+  "name": "cypress-test-scripts",
+  "version": "1.0.0",
+  "description": "Helper scripts untuk menjalankan Cypress tests",
+  "scripts": {
+    "test": "cypress run",
+    "test:headed": "cypress run --headed --browser chrome",
+    "test:open": "cypress open",
+    "test:pengajuan": "cypress run --spec 'cypress/e2e/mahasiswa/bimbingan/pengajuan/*.cy.js'",
+    "test:pengajuan:open": "cypress open --e2e --browser chrome --config specPattern='cypress/e2e/mahasiswa/bimbingan/pengajuan/*.cy.js'",
+    "test:akses": "cypress run --spec 'cypress/e2e/mahasiswa/bimbingan/pengajuan/01-akses-halaman.cy.js'",
+    "test:dosen": "cypress run --spec 'cypress/e2e/mahasiswa/bimbingan/pengajuan/02-pemilihan-dosen.cy.js'",
+    "test:waktu": "cypress run --spec 'cypress/e2e/mahasiswa/bimbingan/pengajuan/03-pemilihan-waktu.cy.js'",
+    "test:topik": "cypress run --spec 'cypress/e2e/mahasiswa/bimbingan/pengajuan/04-form-topik.cy.js'",
+    "test:draft": "cypress run --spec 'cypress/e2e/mahasiswa/bimbingan/pengajuan/05-form-link-draft.cy.js'",
+    "test:submit": "cypress run --spec 'cypress/e2e/mahasiswa/bimbingan/pengajuan/06-submit-pengajuan.cy.js'",
+    "test:ci": "cypress run --record --parallel",
+    "test:chrome": "cypress run --browser chrome",
+    "test:edge": "cypress run --browser edge"
+  }
+}

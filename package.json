@@ -1,0 +1,17 @@
+{
+  "name": "gata-cypress",
+  "version": "1.0.0",
+  "description": "automate cypress test",
+  "license": "ISC",
+  "author": "raps",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^7.0.1",
+    "cypress": "^15.0.0",
+    "cypress-file-upload": "^5.0.8"
+  }
+}
